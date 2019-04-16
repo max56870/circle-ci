@@ -18,3 +18,8 @@ workflows:
     jobs:
       - build
       - test
+      
+mvn sonar:sonar \
+  -Dsonar.projectKey=Circle-ci \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=73b873630e145abae3594990b498a38dae95834d
