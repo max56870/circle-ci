@@ -1,4 +1,4 @@
-version: 1
+version: 2
 jobs:
   build:
     docker:
@@ -13,7 +13,7 @@ jobs:
       - checkout
       - run: <command>
 workflows:
-  version: 1
+  version: 2
   build_and_test:
     jobs:
       - build
