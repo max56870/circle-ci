@@ -203,3 +203,8 @@ if "%MAVEN_BATCH_PAUSE%"=="on" pause
 if "%MAVEN_TERMINATE_CMD%"=="on" exit %ERROR_CODE%
 
 cmd /C exit /B %ERROR_CODE%
+
+mvn sonar:sonar \
+  -Dsonar.projectKey=Circle-ci \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=c80e637f1bfde7c73cc97c4816b09cf6753baac5
